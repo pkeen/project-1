@@ -1,4 +1,5 @@
-import {CountdownTimer} from './modules/countdownTimer.js'
+import {CountdownTimer} from './modules/countdownTimer.js';
+import { BlinkingCursor } from './modules/blinkingCursor.js';
 
 let targetString = 'hello'; // the string user has to type
 let targetRegEx = /hello/;
@@ -28,8 +29,13 @@ secondDiv.append(typePromptEl);
 const targetEl = document.createElement("h1");
 targetEl.innerHTML = targetString;
 secondDiv.append(targetEl);
-const typingEl = document.createElement('h4');
+const typingEl = document.createElement('div');
+typingEl.classList.add('typing');
 thirdDiv.append(typingEl);
+const typingText = document.createElement('h4');
+typingEl.append(typingText);
+const cursorDiv = document.createElement('div');
+typingEl.append(cursorDiv);
 const wellDoneEl = document.createElement('h3');
 wellDoneEl.innerHTML = 'Well done!';
 wellDoneEl.style.visibility = 'hidden';
@@ -65,7 +71,7 @@ const testWinner = () => {
 // render the typing on screen
 const renderTyping = (correctlyTyped) => {
   // typingEl.innerHTML = userString; // simple
-  typingEl.innerHTML = correctlyTyped;
+  typingText.innerHTML = correctlyTyped;
 }
 
 // render function
@@ -79,3 +85,8 @@ const render = () => {
 const timer = new CountdownTimer(1000, 10, timerDiv, () => console.log('end'));
 timer.init();
 timer.start();
+
+// cursor
+const cursor = new BlinkingCursor(400, cursorDiv);
+cursor.init();
+cursor.start();

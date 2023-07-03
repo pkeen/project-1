@@ -20,7 +20,8 @@ main {
 h1,
 h3,
 h4,
-p {
+p,
+span {
   text-align: center;
   color: white;
 }
@@ -30,4 +31,12 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border: 1px solid red;
+}
+
+.typing {
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
