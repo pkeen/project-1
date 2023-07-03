@@ -1,5 +1,5 @@
-import {CountdownTimer} from './modules/countdownTimer.js';
-import { BlinkingCursor } from './modules/blinkingCursor.js';
+import { CountdownTimer } from './modules/countdownTimer.js';
+import { BlinkingCursor } from './modules/blinkingCursor/blinkingCursor.js';
 
 let targetString = 'hello'; // the string user has to type
 let targetRegEx = /hello/;

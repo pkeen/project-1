@@ -1,6 +1,9 @@
 # Project 1 Pitch
 
 ## Elevator Pitch
+TikType is a game for people who want to increase their touch-typing speed and accuracy. 
+A player is given a word they must type correctly before a timer runs out. 
+The game will progress, as longer words are added and time decreases. 
 
 ## Tech Stacks
 
@@ -21,4 +24,4 @@
 * animation for timer
 * touch typing beginner tutorial rounds
 * animated Keyboard highlighting where to press
-* 
+* Tutorial for finger positioning for correct typing technique. 
