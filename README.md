@@ -25,3 +25,5 @@ The game will progress, as longer words are added and time decreases.
 * touch typing beginner tutorial rounds
 * animated Keyboard highlighting where to press
 * Tutorial for finger positioning for correct typing technique. 
+* Animation: Words float down
+

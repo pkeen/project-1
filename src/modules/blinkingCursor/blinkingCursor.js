@@ -25,16 +25,18 @@ class BlinkingCursor {
     }
 
     render = () => [
-        this.show ? this.element.innerHTML = '|' : this.element.innerHTML = ' '
+        // this.show ? this.element.innerHTML = '|' : this.element.innerHTML = ' '
+        this.element.innerHTML = '|'
     ]
 
     init = () => {
         this.element = document.createElement('span');
         this.element.style.display = 'inline-block';
         this.element.style.width = '5px';
+        this.element.classList.add('yellow');
         this.parentElement.append(this.element);
     }
 
 }
 
-export {BlinkingCursor};
+export default BlinkingCursor;

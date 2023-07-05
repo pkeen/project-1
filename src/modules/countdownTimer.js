@@ -69,4 +69,4 @@ class CountdownTimer {
     }
 }
 
-export {CountdownTimer};
+export default CountdownTimer;
