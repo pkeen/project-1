@@ -6,9 +6,16 @@ A player is given a word they must type correctly before a timer runs out.
 The game will progress, as longer words are added and time decreases. 
 
 ## Tech Stacks
+* Vanilla Javascript
+* HTML
+* CSS
+* Maybe: Web Audio API
 
 ## Wireframes
-![Basic view](./src/images/Screenshot%202023-07-05%20at%2010.50.35.png)
+### Basic Game
+![Basic view](./src/images/basic-game.png)
+### Floating Bubbles Variation
+![Floating Bubbles Variation](./src/images/floating-bubbles-variation.png)
 
 ## MVP Goals
 * A target word is displayed on screen
