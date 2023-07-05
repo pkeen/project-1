@@ -34,3 +34,7 @@ The game will progress, as longer words are added and time decreases.
 * Tutorial for finger positioning for correct typing technique. 
 * Animation: Words float down
 
+## Roadblocks
+* Finding the best way to structure game logic
+* Animation could get confusing
+* Setting MVP priority first
